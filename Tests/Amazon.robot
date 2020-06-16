@@ -5,6 +5,7 @@ Library  SeleniumLibrary
 *** Variables ***
 
 *** Test Cases ***
+# This is the test case
 User must signt in to check out
     [Documentation]  This is some basic info about the test
     [Tags]  Smoke
