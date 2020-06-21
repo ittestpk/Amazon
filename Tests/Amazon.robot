@@ -3,13 +3,13 @@ Documentation  This is some basic info about the whole suite
 Library  SeleniumLibrary
 
 *** Variables ***
-
+${BROWSER} =  chrome
 *** Test Cases ***
 # This is the test case
 User must signt in to check out
     [Documentation]  This is some basic info about the test
     [Tags]  Smoke
-    Open Browser  http://www.amazon.com  chrome
+    Open Browser  http://www.amazon.com  ${BROWSER}
     Maximize Browser Window
     Wait Until Element Is V isible  xpath://*[@id="nav-logo"]/a/span[1]
     Input Text  id=twotabsearchtextbox  ferrari 458 italia red
